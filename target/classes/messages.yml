@@ -1,0 +1,69 @@
+prefix: '&6[KteRising] &r'
+title:
+  start-game:
+    title: '&6GAME STARTED'
+    sub: '&aGood Luck'
+  lava-starting:
+    title: '&6Lava Rising'
+    sub: '&cBeware of Lava'
+  finish-game:
+    title: '&6GAME OVER'
+    sub: '&aWinner: &f%winner%'
+  pvp-allow:
+    title: '&6PVP Allow!'
+    sub: '&cbe careful!'
+  player-died:
+    title: '&cYou Died'
+    sub: '&aNext time!'
+  mode-refresh:
+    title: '&6Mode Changed!'
+    sub: '&aMode: &f%mode%'
+  skip:
+    title: '&6Time skipped'
+    sub: '&aWatch Out'
+  freeze:
+    title: '&6Lava Rising'
+    sub: '&aFreezed'
+  freeze-started:
+    sub: '&aUnFreezed'
+  start-time: '&aStarting in &f%time%'
+  mod-winner:
+    title: '&6Winner Mode is'
+    sub: '&a%mod%'
+  worldborder-shrink:
+    title: '&cAttention!'
+    sub: '&6Space is shrinking!'
+  eliminated:
+    title: '&cYou Are eliminated'
+    sub: '&aNext time!'
+pvp-enabled: '&aEnabled'
+pvp-disabled: '&cDisabled'
+start-time: '&aStarting in: &f'
+start-second: ' &aseconds!'
+mod:
+  voted: '&aYou have voted for the %mod% mod!'
+  no_winner: '&cNo winning mod found in the vote.'
+  votes: '&7Votes: &a%votes%'
+  already-voted: '&aYou have already voted for this mod!'
+message:
+  command-title: '&8&m-----------&6KteRising-----------'
+  command-mod: '                 &6Mods'
+  command-classic: '&6  Classic   &7- &fPlay the game with mining.'
+  command-op: '&6  Op        &7- &fPlay the game without mining.'
+  command-ultraop: '&6  UltraOP        &7- &fPlay with bow in Op mode.'
+  command-elytra: '&6  Elytra    &7- &fPlay with Elytra in Classic mode.'
+  command-elytraop: '&6  ElytraOP    &7- &fPlay with Elytra in Op mode.'
+  command-trident: '&6  Trident &7- &fPlay with Trident in Classic mode.'
+  command-tridentop: '&6  TridentOP &7- &fPlay with Trident in Op mode.'
+  command-start: '&6  /kterising start &7- &fStart the Game'
+  command-mode: '&6  /kterising mode &7- &fChange the mode.'
+  command-reload: '&6  /kterising reload &7- &fReload the Plugin.'
+  command-skip: '&6  /kterising skip &7- &fSkips the mining part of classic modes'
+  command-freeze: '&6  /kterising freeze &7- &fFreezes the rise of lava'
+  command-vote: '&6  /kterising vote &7- &fOpens the Vote menu.'
+  dont-permission: '&4You don''t have permission.'
+  already-started: '&4Game already started.'
+  not-started: '&4The game hasn''t started'
+  plugin-reload: '&aPlugin Reloaded'
+  invalid-command: '&aYou entered an invalid command.'
+  command-game-started: '&aGame started.'

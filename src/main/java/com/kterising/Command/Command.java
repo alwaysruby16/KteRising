@@ -2,6 +2,7 @@ package com.kterising.Command;
 
 import com.kterising.Functions.*;
 import com.kterising.KteRising;
+import com.kterising.Team.TeamGUI;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandExecutor;
@@ -65,9 +66,9 @@ public class Command implements CommandExecutor {
 
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(MessagesConfig.get().getString("message.command-game-started"))));
 
-                ModVoteGUI.setVotingEnabled(false);
-                ModVoteGUI.selectWinningMod();
+                ModVoteGUI.selectWinningVotes();
                 for (Player player : Bukkit.getOnlinePlayers()) {
+                    SpecialItems.removeSpecialItems(player);
                     ModVoteGUI.closeModVoteMenu(player);
                 }
 
@@ -102,6 +103,21 @@ public class Command implements CommandExecutor {
                 if (sender instanceof Player) {
                     Player player = (Player) sender;
                     openModVoteMenu(player);
+                }
+                return true;
+
+            case "team":
+                if (!sender.hasPermission("kterising.team")) {
+                    sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(MessagesConfig.get().getString("message.dont-permission"))));
+                    return true;
+                }
+                if (StartGame.match) {
+                    sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(MessagesConfig.get().getString("message.already-started"))));
+                    return true;
+                }
+                if (sender instanceof Player) {
+                    Player player = (Player) sender;
+                    TeamGUI.openTeamMenu(player);
                 }
                 return true;
 
